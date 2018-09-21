@@ -36,13 +36,24 @@
 	display: block;
 }
 
-.catalog-item:hover .availability-available {
+.catalog-item:hover .availability-available,
+{
+	display: block;
+}
+.catalog-item:hover .item-memory{
+	display: flex;
+}
+.catalog-item:hover .availability-available{
 	display: block;
 }
 
-
 .catalog-item:hover .availability-limited {
 	display: none;
+}
+
+
+.catalog-item:hover .item-name {
+	margin-bottom: 8px;
 }
 
 
@@ -195,17 +206,23 @@
 }
 
 .item-name {
-	font-size: 14px
+	margin: 0;
+	color: #212121;
+	margin: 0;
+	margin-bottom: 28px;
+}
+
+.item-name a {
+	font-size: 14px;
 	
 	color: #212121;
 	font-family: Arial;
-	margin: 0;
-	margin-bottom: 28px;
 	
+	text-decoration: none;
 }
 
 .item-memory {
-	
+	display: none;
 	margin-bottom: 12px;
 }
 
